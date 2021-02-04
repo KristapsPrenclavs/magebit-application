@@ -1,0 +1,443 @@
+* {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.backgroudImage {
+  background-size: cover;
+  width: 64.6%;
+  height: 100%;
+  background-image: url(media/image_summer.png);
+  background-repeat: no-repeat;
+}
+
+.mainContainer {
+  background: linear-gradient(180deg, #ffffff 0%, #f2f5fa 100%);
+  width: 35.4%;
+  height: 100%;
+}
+
+.navbar {
+  display: flex;
+  padding: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: #6a707b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: normal;
+  padding-left: 26.9px;
+  line-height: 26px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.pineappleText {
+  padding: 2px 0 0 15px;
+}
+
+.pineappleLogo {
+  color: #4066a5;
+  padding-bottom: 13px;
+}
+
+.contentMiddle {
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px 0 100px;
+}
+
+.heading {
+  padding: 22px 40px 50px 40px;
+}
+
+.heading h1 {
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  padding-bottom: 15px;
+}
+
+.heading p {
+  color: #6a707b;
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  font-style: normal;
+}
+
+.message {
+  font-size: 0.8rem;
+  padding: 2px 10px;
+}
+
+.subscribed {
+  display: block;
+}
+.subscribedImg {
+  padding: 1rem 0 0 2rem;
+}
+.subscribedHeading {
+  padding: 1rem 0 0 2rem;
+}
+
+.lineSvg {
+  padding: 37px 0 0 37px;
+}
+
+.icons {
+  padding-top: 45px;
+  padding-left: 110px;
+  display: flex;
+}
+
+.iconBorder {
+  border: 2px solid #e3e3e4;
+  height: 41px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 41px;
+  position: relative;
+  margin: 0 10px;
+}
+
+.icons i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #131821;
+  opacity: 0.3;
+}
+
+@media (max-width: 1724px) {
+  .mainContainer {
+    width: 40vw;
+  }
+
+  .navbar {
+    padding: 8vh 6vw;
+  }
+
+  .contentMiddle {
+    padding: 6vh 6vw;
+  }
+}
+@media (max-width: 1524px) {
+  .mainContainer {
+    width: 42vw;
+  }
+
+  .navbar {
+    padding: 6vh 4vw;
+  }
+
+  .contentMiddle {
+    padding: 5vh 4vw;
+  }
+
+  .lineSvg {
+    padding: 3vh 2vw;
+  }
+
+  .line {
+    width: 100%;
+  }
+
+  .icons {
+    padding: 6vh 7vw;
+  }
+}
+@media (max-width: 1324px) {
+  .mainContainer {
+    width: 48vw;
+  }
+
+  .navbar {
+    padding: 6vh 2vw;
+  }
+
+  .contentMiddle {
+    padding: 5vh 3vw;
+  }
+
+  .lineSvg {
+    padding: 3vh 2vw;
+  }
+
+  .line {
+    width: 100%;
+  }
+
+  .icons {
+    padding: 5vh 6vw;
+  }
+}
+@media (max-width: 1124px) {
+  .mainContainer {
+    width: 50vw;
+  }
+
+  .navbar {
+    padding: 5vh 1vw;
+  }
+
+  .navbar a {
+    padding: 0 1vw;
+    font-size: 14px;
+  }
+
+  .contentMiddle {
+    padding: 4vh 2vw;
+  }
+
+  .heading h1 {
+    font-size: 28px;
+  }
+
+  .heading p {
+    font-size: 14px;
+  }
+
+  .lineSvg {
+    padding: 3vh 2vw;
+  }
+
+  .line {
+    width: 100%;
+  }
+
+  .icons {
+    padding: 3vh 6vw;
+    align-items: center;
+  }
+}
+@media (max-width: 924px) {
+  .mainContainer {
+    width: 50vw;
+  }
+
+  .navbar {
+    padding: 5vh 2vw;
+  }
+
+  .contentMiddle {
+    padding: 4vh 2vw;
+  }
+
+  .heading h1 {
+    font-size: 26px;
+  }
+
+  .heading p {
+    font-size: 14px;
+  }
+
+  .lineSvg {
+    padding: 3vh 2vw;
+  }
+
+  .line {
+    width: 100%;
+  }
+
+  .icons {
+    padding: 3vh 6vw;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+    position: absolute;
+  }
+
+  .mainContainer {
+    width: 100%;
+  }
+
+  .navbar {
+    display: flex;
+    background: linear-gradient(180deg, #ffffff 0%, #f2f5fa 100%);
+    z-index: 5;
+    position: relative;
+  }
+
+  .pineappleText {
+    display: none;
+  }
+
+  .pineappleLogo {
+    transform: scale(1.5);
+    padding: 1rem 2rem;
+  }
+
+  .navbar {
+    padding: 0.5rem 0;
+  }
+
+  .navbar a {
+    font-size: 18px;
+    padding: 0 2rem;
+  }
+
+  .contentMiddle {
+    height: auto;
+    z-index: 5;
+    position: relative;
+    background: linear-gradient(180deg, #ffffff 0%, #f2f5fa 100%);
+    margin: 30% 1rem;
+  }
+
+  .heading {
+    padding: 1rem 0;
+    margin: 0.8rem;
+  }
+
+  .heading h1 {
+    font-size: 2.5rem;
+    line-height: 1rem;
+  }
+
+  .heading p {
+    padding-top: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .line {
+    width: 100%;
+  }
+
+  .lineSvg {
+    padding: 10px;
+  }
+
+  .icons {
+    justify-content: center;
+    padding: 2rem 2rem;
+    transform: scale(1.8);
+  }
+
+  .backgroudImage {
+    width: 100%;
+    position: absolute;
+  }
+}
+@media (max-width: 540px) {
+  .pineappleLogo {
+    transform: scale(1);
+    padding: 1rem 1rem;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar a {
+    font-size: 14px;
+    padding: 0 1rem;
+  }
+
+  .heading {
+    padding: 0.6rem 0;
+    margin: 0.8rem;
+  }
+
+  .heading h1 {
+    font-size: 1.7rem;
+    line-height: 0.4rem;
+  }
+
+  .heading p {
+    padding-top: 0.6rem;
+    font-size: 1rem;
+  }
+  .lineSvg {
+    padding: 0 1rem;
+  }
+
+  .icons {
+    padding: 1rem 2rem;
+    transform: scale(1);
+  }
+}
+@media (max-width: 370px) {
+  .pineappleLogo {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar a {
+    font-size: 12px;
+    padding: 0 0.5rem;
+  }
+
+  .heading h1 {
+    font-size: 1.3rem;
+    line-height: 0.3rem;
+  }
+
+  .heading p {
+    padding-top: 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  .icons {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .iconBorder {
+    margin: 0 5px;
+  }
+}
+@media (max-width: 300px) {
+  .navbar a {
+    font-size: 12px;
+    padding: 0.1rem 0.1rem;
+  }
+
+  .heading h1 {
+    font-size: 1rem;
+    line-height: 0.2rem;
+  }
+
+  .heading p {
+    padding-top: 0.2rem;
+    font-size: 0.6rem;
+    line-height: 1rem;
+  }
+
+  .input_container {
+    margin: 0 0.6rem;
+  }
+
+  .icons {
+    padding: 0.3rem 0.3rem;
+    transform: scale(0.8);
+  }
+
+  .iconBorder {
+    margin: 0 5px;
+  }
+}
